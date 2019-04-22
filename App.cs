@@ -11,8 +11,29 @@ namespace GuessMyNumberGame
         
         public void Run()
         {
-            //new UserGuessesNumber().GuessNumber();
-            new ComputerGuessesNumber().ComputerGame();
+            bool exit = false;
+            do
+            {
+                Console.WriteLine("1.Play against computer 2. Computer guesses your number 3. Exit");
+                int choice = int.Parse(Console.ReadLine());
+                switch (choice)
+                {
+
+                    case 1:
+                        new UserGuessesNumber().GuessNumber();
+                        break;
+                    case 2:
+                        new ComputerGuessesNumber().ComputerGame();
+                        break;
+                    case 3:
+                        exit = true;
+                        break;
+                    default:
+                        break;
+
+                }
+            } while (!exit);
+            
 
 
 
