@@ -18,7 +18,7 @@ namespace GuessMyNumberGame
             bool win = false;
             int guesses = 10;
             int guessedNumber = 0;
-            Console.WriteLine($"Choose a number between {low} - {high} for the computer to guess");
+            Console.WriteLine($"Chooose a number between {low} - {high} for the computer to guess");
             Console.WriteLine("The computer will have 10 guesses");
             value = int.Parse(Console.ReadLine());
             Console.Clear();
